@@ -3,14 +3,16 @@ import "./pricing-card.css";
 
 export default class PricingCard extends React.Component<any, any> {
   selectCard(event: any) {
-    const card = event.target.parentNode.parentNode;
-    console.log(card);
-    card.classList.toggle("active");
+    let curElement = event.target;
+    while (![...curElement.classList].includes("pricing-card")) {
+      curElement = curElement.parentNode;
+    }
+    curElement.classList.toggle("active");
   }
 
   render() {
     return (
-      <div className="pricing-card">
+      <div className="pricing-card"  onClick={this.selectCard}>
         <div className="plan-name">{this.props.plan.planName}</div>
         <div className="pricing">{this.props.plan.pricing}</div>
         <div className="details">
@@ -25,7 +27,7 @@ export default class PricingCard extends React.Component<any, any> {
           </div>
         </div>
         <div className="learn-more">
-          <button onClick={this.selectCard}>Learn More</button>
+          <button>Learn More</button>
         </div>
       </div>
     )
