@@ -26,7 +26,7 @@ export default class PricingCard extends React.Component<any, any> {
     return (
       <div className="pricing-card" onClick={this.selectCard}>
         <div className="plan-name">{this.props.plan.planName}</div>
-        <div className="pricing">{this.props.plan.pricing}</div>
+        <div className="pricing">{this.props.annualPricing ? "$" + this.props.plan.pricing * 12 :  "$" + this.props.plan.pricing}</div>
         <div className="details">
           <div className="detail" style={{borderBottom: "none"}}>
             {this.props.plan.storage}
