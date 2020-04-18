@@ -1,9 +1,9 @@
 import React from 'react';
-import PricingCard from "./components/PricingCard";
+import PricingCardList from "./components/PricingCardList";
 
 function App() {
   return (
-    <PricingCard/>
+    <PricingCardList/>
   );
 }
 

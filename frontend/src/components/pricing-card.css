@@ -1,6 +1,6 @@
 .pricing-card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-row: auto;
   text-align: center;
   background-color: #979ced;
   color: white;
