@@ -15,7 +15,7 @@ const samplePlans = [
     pricing: "24.99",
     storage: "1 TB Storage",
     userLimit: "5 Users Allowed",
-    sendLimit: "10 GB",
+    sendLimit: "Send Up To 10 GB",
   },
   {
     planName: "Master",
