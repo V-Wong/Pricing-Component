@@ -8,6 +8,11 @@ export default class PricingCard extends React.Component<any, any> {
       curElement = curElement.parentNode;
     }
     curElement.classList.toggle("active");
+    for (let card of curElement.parentNode.children) {
+      if (card != curElement) {
+        card.classList.remove("active");
+      }
+    }
   }
 
   render() {
