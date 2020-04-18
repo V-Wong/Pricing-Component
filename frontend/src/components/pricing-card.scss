@@ -2,6 +2,11 @@ $tablet-breakpoint: 1080px;
 
 $light-purple: #979CED;
 $dark-blue: #7074df;
+$off-white: #F7F7FF;
+
+body {
+    background-color: $off-white;
+}
 
 .pricing-card {
     font-family: "Nunito", sans-serif;
@@ -10,6 +15,7 @@ $dark-blue: #7074df;
     justify-items: center;
     align-items: center;
     text-align: center;
+    background-color: white;
     width: 250px;
     height: 300px;
     margin: auto;
@@ -64,6 +70,7 @@ $dark-blue: #7074df;
 
 .pricing-card-list {
     display: flex;
+    padding-top: 5vh;
     width: 750px;
     margin: auto;
     justify-content: center;
