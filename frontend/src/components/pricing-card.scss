@@ -56,3 +56,11 @@ $dark-blue: #7074df;
         }
     }
 }
+
+.pricing-card-list {
+    display: flex;
+    width: 750px;
+    margin: auto;
+    justify-content: center;
+    flex-direction: row;
+}

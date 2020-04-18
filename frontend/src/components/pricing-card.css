@@ -45,3 +45,10 @@
   outline: none;
   border-radius: 3px;
 }
+.pricing-card-list {
+  display: flex;
+  width: 750px;
+  margin: auto;
+  justify-content: center;
+  flex-direction: row;
+}
