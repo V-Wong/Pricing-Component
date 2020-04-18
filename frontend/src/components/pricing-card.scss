@@ -10,12 +10,11 @@ $dark-blue: #7074df;
     justify-items: center;
     align-items: center;
     text-align: center;
-    background-image: linear-gradient($light-purple, $dark-blue);
-    color: white;
     width: 250px;
     height: 300px;
     margin: auto;
     border-radius: 5px;
+    transition: transform .2s;
 
     .plan-name {
         grid-row: auto;
@@ -55,6 +54,12 @@ $dark-blue: #7074df;
             border-radius: 3px;
         }
     }
+}
+
+.pricing-card.active {
+    background-image: linear-gradient($light-purple, $dark-blue);
+    color: white;
+    transform: scale(1.05);
 }
 
 .pricing-card-list {

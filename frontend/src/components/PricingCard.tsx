@@ -2,6 +2,12 @@ import React from "react";
 import "./pricing-card.css";
 
 export default class PricingCard extends React.Component<any, any> {
+  selectCard(event: any) {
+    const card = event.target.parentNode.parentNode;
+    console.log(card);
+    card.classList.toggle("active");
+  }
+
   render() {
     return (
       <div className="pricing-card">
@@ -19,7 +25,7 @@ export default class PricingCard extends React.Component<any, any> {
           </div>
         </div>
         <div className="learn-more">
-          <button>Learn More</button>
+          <button onClick={this.selectCard}>Learn More</button>
         </div>
       </div>
     )
