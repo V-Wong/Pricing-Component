@@ -13,13 +13,14 @@ body {
 .title {
     margin: auto;
     padding: auto;
-    text-align: center;;
+    text-align: center;
 }
 
 .switch-container {
     display: flex;
     justify-content: center;
     vertical-align: center;
+    font-weight: 600;
 }
 
 /* The switch - the box around the slider */
