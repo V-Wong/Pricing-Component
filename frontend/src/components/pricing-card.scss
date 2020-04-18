@@ -5,12 +5,7 @@ $dark-blue: #7074df;
 $off-white: #F7F7FF;
 $darker-blue: #464BD6;
 
-body {
-    background-color: $off-white;
-}
-
 .pricing-card {
-    font-family: "Nunito", sans-serif;
     display: grid;
     grid-template-rows: 0.5fr 1fr 1fr 1fr;
     justify-items: center;
@@ -91,7 +86,7 @@ body {
 
 .pricing-card-list {
     display: flex;
-    padding-top: 25vh;
+    padding-top: 10vh;
     width: 750px;
     margin: auto;
     justify-content: center;
