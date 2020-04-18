@@ -5,10 +5,22 @@ export default class PricingCard extends React.Component<any, any> {
   render() {
     return (
       <div className="pricing-card">
-        <p>{this.props.plan.planName}</p>
-        <p>{this.props.plan.pricing}</p>
-        <p>{this.props.plan.storage}</p>
-        <p>{this.props.plan.sendLimit}</p>
+        <div className="plan-name">{this.props.plan.planName}</div>
+        <div className="pricing">{this.props.plan.pricing}</div>
+        <div className="details">
+          <div className="detail" style={{borderBottom: "none"}}>
+            {this.props.plan.storage}
+          </div>
+          <div className="detail" style={{borderBottom: "none"}}>
+            {this.props.plan.userLimit}
+          </div>
+          <div className="detail">
+            {this.props.plan.sendLimit}
+          </div>
+        </div>
+        <div className="learn-more">
+          <button>Learn More</button>
+        </div>
       </div>
     )
   }

@@ -1,15 +1,58 @@
 $tablet-breakpoint: 1080px;
 
 $light-purple: #979CED;
+$dark-blue: #7074df;
 
 .pricing-card {
-    display: flex;
-    flex-direction: column;
+    font-family: "Nunito", sans-serif;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
     text-align: center;
-    background-color: $light-purple;
+    background-image: linear-gradient($light-purple, $dark-blue);
     color: white;
-    width: 300px;
-    height: 350px;
+    width: 250px;
+    height: 300px;
     margin: auto;
     border-radius: 5px;
+
+    .plan-name {
+        grid-row: auto;
+        font-weight: 600;
+        padding-top: 10%;
+    }
+
+    .pricing {
+        grid-row: auto;
+        font-weight: 700;
+        font-size: 50px;
+    }
+
+    .details {
+        grid-row: auto;
+        width: 80%;
+
+        .detail {
+            width: 100%;
+            border-top: 1px solid rgba(205, 205, 205, 0.5);
+            border-bottom: 1px solid rgba(205, 205, 205, 0.5);
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    }
+
+    .learn-more {
+        grid-row: auto;
+
+        button {
+            height: 25px;
+            width: 200px;
+            color: $dark-blue;
+            background: white;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+        }
+    }
 }
