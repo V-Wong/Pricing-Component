@@ -1,0 +1,15 @@
+$tablet-breakpoint: 1080px;
+
+$light-purple: #979CED;
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $light-purple;
+    color: white;
+    width: 300px;
+    height: 350px;
+    margin: auto;
+    border-radius: 5px;
+}

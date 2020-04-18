@@ -1,0 +1,11 @@
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #979ced;
+  color: white;
+  width: 300px;
+  height: 350px;
+  margin: auto;
+  border-radius: 5px;
+}
