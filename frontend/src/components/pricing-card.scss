@@ -3,6 +3,7 @@ $tablet-breakpoint: 1080px;
 $light-purple: #979CED;
 $dark-blue: #7074df;
 $off-white: #F7F7FF;
+$darker-blue: #464BD6;
 
 body {
     background-color: $off-white;
@@ -21,6 +22,7 @@ body {
     margin: auto;
     border-radius: 5px;
     transition: transform .2s;
+    box-shadow: 0 4px 4px 0 hsla(0, 0%, 0%, 0.2);
 
     .plan-name {
         grid-row: auto;
@@ -53,11 +55,18 @@ body {
         button {
             height: 25px;
             width: 200px;
-            color: $dark-blue;
-            background: white;
+            letter-spacing: 1px;
+            color: white;
+            background: $dark-blue;
             border: none;
             outline: none;
             border-radius: 3px;
+            transition: background-color 0.5s ease;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: $darker-blue;
         }
     }
 }
@@ -66,11 +75,23 @@ body {
     background-image: linear-gradient($light-purple, $dark-blue);
     color: white;
     transform: scale(1.05);
+
+    .learn-more {
+        button {
+            color: $dark-blue;
+            background: white;
+            transition: color 0.5s ease;
+        }
+
+        button:hover {
+            color: $darker-blue;
+        }
+    }
 }
 
 .pricing-card-list {
     display: flex;
-    padding-top: 5vh;
+    padding-top: 25vh;
     width: 750px;
     margin: auto;
     justify-content: center;

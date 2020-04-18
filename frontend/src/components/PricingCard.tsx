@@ -39,7 +39,7 @@ export default class PricingCard extends React.Component<any, any> {
           </div>
         </div>
         <div className="learn-more">
-          <button>Learn More</button>
+          <button>LEARN MORE</button>
         </div>
       </div>
     )
