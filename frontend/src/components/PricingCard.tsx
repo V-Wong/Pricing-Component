@@ -15,9 +15,16 @@ export default class PricingCard extends React.Component<any, any> {
     }
   }
 
+  componentDidMount() {
+    // This is a hack to get the middle pricing card selected by default.
+    // Figure out a better way to do this.
+
+    document.getElementsByClassName("pricing-card")[1].classList.toggle("active");
+  }
+
   render() {
     return (
-      <div className="pricing-card"  onClick={this.selectCard}>
+      <div className="pricing-card" onClick={this.selectCard}>
         <div className="plan-name">{this.props.plan.planName}</div>
         <div className="pricing">{this.props.plan.pricing}</div>
         <div className="details">
