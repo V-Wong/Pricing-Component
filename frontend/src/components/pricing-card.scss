@@ -94,7 +94,7 @@ $darker-blue: #464BD6;
 }
 
 @media (max-width: 800px) {
-    .pricing-card {
+    .pricing-card + .pricing-card{
         margin-top: 3vh;
     }
     

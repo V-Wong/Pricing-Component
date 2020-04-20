@@ -49,6 +49,7 @@ export default class App extends React.Component<any, any> {
           <p style={{marginLeft: "1vw"}}>Annually</p>
         </div>
         <PricingCardList plans={samplePlans} annualPricing={this.state.annualPricing}/>
+        <footer><a href="https://vwong.dev">My Personal Website</a></footer>
       </>
     );
   }
