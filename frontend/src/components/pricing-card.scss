@@ -94,6 +94,10 @@ $darker-blue: #464BD6;
 }
 
 @media (max-width: 800px) {
+    .pricing-card {
+        margin-top: 3vh;
+    }
+    
     .pricing-card-list {
         flex-direction: column;
         margin: auto;
