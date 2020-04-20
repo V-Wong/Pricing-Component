@@ -26,7 +26,7 @@ const samplePlans = [
   }
 ];
 
-export default class App extends React.Component {
+export default class App extends React.Component<any, any> {
   constructor(props) {
     super(props);
     this.state = {
@@ -42,9 +42,9 @@ export default class App extends React.Component {
         </div>
         <div className="switch-container">
           <p style={{marginRight: "1vw"}}>Monthly</p>
-          <label class="switch">
+          <label className="switch">
             <input type="checkbox" onClick={() => this.setState({annualPricing: !this.state.annualPricing})}/>
-            <span class="slider"></span>
+            <span className="slider"></span>
           </label>
           <p style={{marginLeft: "1vw"}}>Annually</p>
         </div>

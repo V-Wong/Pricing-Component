@@ -92,3 +92,11 @@ $darker-blue: #464BD6;
     justify-content: center;
     flex-direction: row;
 }
+
+@media (max-width: 800px) {
+    .pricing-card-list {
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+}
