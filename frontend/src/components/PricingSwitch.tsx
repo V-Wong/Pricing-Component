@@ -1,5 +1,5 @@
 import React from "react";
-import "./pricing-switch.css"
+import "./css/pricing-switch.css"
 
 export default class PricingSwitch extends React.Component<any, any> {
   render() {

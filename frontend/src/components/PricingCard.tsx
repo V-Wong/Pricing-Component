@@ -1,5 +1,5 @@
 import React from "react";
-import "./pricing-card.css";
+import "./css/pricing-card.css";
 
 export default class PricingCard extends React.Component<any, any> {
   selectCard(event: any) {

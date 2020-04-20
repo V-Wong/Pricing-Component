@@ -1,8 +1,6 @@
 import React from "react";
 import PricingCard from "./PricingCard";
-import "./pricing-card.css"
-
-
+import "./css/pricing-card.css"
 
 export default class PricingCardList extends React.Component<any, any> {
   render() {
