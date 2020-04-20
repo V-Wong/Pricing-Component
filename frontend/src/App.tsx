@@ -1,5 +1,6 @@
 import React from 'react';
 import PricingCardList from "./components/PricingCardList";
+import PricingSwitch from "./components/PricingSwitch";
 import "./app.css"
 
 const samplePlans = [
@@ -34,22 +35,21 @@ export default class App extends React.Component<any, any> {
     }
   }
 
+  changePricingModel = () => {
+    this.setState({annualPricing: !this.state.annualPricing})
+  }
+
   render() {
     return (
       <>
         <div className="title">
           <h1>Pricing Component Exercise</h1>
         </div>
-        <div className="switch-container">
-          <p style={{marginRight: "1vw"}}>Monthly</p>
-          <label className="switch">
-            <input type="checkbox" onClick={() => this.setState({annualPricing: !this.state.annualPricing})}/>
-            <span className="slider"></span>
-          </label>
-          <p style={{marginLeft: "1vw"}}>Annually</p>
-        </div>
+        <PricingSwitch pricingModelChanger={this.changePricingModel}></PricingSwitch>
         <PricingCardList plans={samplePlans} annualPricing={this.state.annualPricing}/>
-        <footer><a href="https://vwong.dev">My Personal Website</a></footer>
+        <footer>
+          <a href="https://vwong.dev">My Personal Website</a>
+        </footer>
       </>
     );
   }
