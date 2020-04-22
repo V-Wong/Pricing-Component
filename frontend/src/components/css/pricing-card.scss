@@ -18,6 +18,7 @@ $darker-blue: #464BD6;
     border-radius: 5px;
     transition: transform .2s;
     box-shadow: 0 4px 4px 0 hsla(0, 0%, 0%, 0.2);
+    cursor: pointer;
 
     .plan-name {
         grid-row: auto;
