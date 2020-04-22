@@ -48,7 +48,9 @@ export default class App extends React.Component<any, any> {
         <PricingSwitch pricingModelChanger={this.changePricingModel}></PricingSwitch>
         <PricingCardList plans={samplePlans} annualPricing={this.state.annualPricing}/>
         <footer>
-          <a href="https://vwong.dev">My Personal Website</a>
+          <button onClick={() => document.location.href = "https://vwong.dev"}>
+            My Personal Website
+          </button>
         </footer>
       </>
     );

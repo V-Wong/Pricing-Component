@@ -32,14 +32,20 @@ footer {
     justify-content: center;
     align-items: center;
 
-    a {
-        color: black;
-        border-bottom: dotted 1.5px;
-        text-decoration: none;
-        font-size: 18px;
+    button {
+        height: 25px;
+        width: 200px;
+        letter-spacing: 1px;
+        color: white;
+        background: $darker-blue;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        transition: background-color 0.5s ease;
+        cursor: pointer;
     }
 
-    a:hover {
-        border-bottom: solid 1.5px;
+    button:hover {
+        background-color: $dark-blue;
     }
 }
