@@ -4,8 +4,14 @@
   vertical-align: center;
   font-weight: 600;
 }
+.switch-container p {
+  color: #b3b5c6;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
 .switch {
-  margin-top: 1.5vh;
+  margin-top: 2vh;
   position: relative;
   width: 60px;
   height: 34px;

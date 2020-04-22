@@ -10,24 +10,28 @@ $darker-blue: #464BD6;
     justify-content: center;
     vertical-align: center;
     font-weight: 600;
+
+    p {
+        color: hsl(234, 14%, 74%);
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
 }
 
-/* The switch - the box around the slider */
 .switch {
-    margin-top: 1.5vh;
+    margin-top: 2vh;
     position: relative;
     width: 60px;
     height: 34px;
   }
   
-/* Hide default HTML checkbox */
 .switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
 
-/* The slider */
 .slider {
     position: absolute;
     cursor: pointer;

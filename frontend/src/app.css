@@ -1,11 +1,16 @@
 body {
   background-color: #f7f7ff;
-  font-family: "Nunito", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .title {
   margin: auto;
+  margin-top: 7.5vh;
   padding: auto;
   text-align: center;
+  color: #6d708d;
+}
+.title h1 {
+  font-weight: bold;
 }
 footer {
   display: flex;
@@ -13,9 +18,16 @@ footer {
   height: 50px;
   text-align: center;
   margin: auto;
+  margin-top: 7.5vh;
   justify-content: center;
   align-items: center;
 }
 footer a {
   color: black;
+  border-bottom: dotted 1.5px;
+  text-decoration: none;
+  font-size: 18px;
+}
+footer a:hover {
+  border-bottom: solid 1.5px;
 }

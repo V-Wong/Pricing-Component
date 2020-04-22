@@ -7,13 +7,19 @@ $darker-blue: #464BD6;
 
 body {
     background-color: $off-white;
-    font-family: "Nunito", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .title {
     margin: auto;
+    margin-top: 7.5vh;
     padding: auto;
     text-align: center;
+    color: hsl(233, 13%, 49%);
+
+    h1 {
+        font-weight: bold;
+    }
 }
 
 footer {
@@ -22,10 +28,18 @@ footer {
     height: 50px;
     text-align: center;
     margin: auto;
+    margin-top: 7.5vh;
     justify-content: center;
     align-items: center;
 
     a {
         color: black;
+        border-bottom: dotted 1.5px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    a:hover {
+        border-bottom: solid 1.5px;
     }
 }
